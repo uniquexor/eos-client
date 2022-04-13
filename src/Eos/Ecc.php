@@ -155,7 +155,7 @@ class Ecc
 
             $nonce++;
             if ($nonce % 10 == 0) {
-                throw new \Exception('签名失败', 1);
+                throw new EosSigningError('Signing failed', 1);
             }
         }
 
